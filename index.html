@@ -30,6 +30,59 @@
         .adlam-display-regular {
             font-family: "ADLaM Display", serif;
         }
+
+        .wave span {
+            display: inline-block;
+            animation: wave 1.5s infinite ease-in-out;
+        }
+
+        @keyframes wave {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .wave span:nth-child(1) {
+            animation-delay: 0s;
+        }
+
+        .wave span:nth-child(2) {
+            animation-delay: 0.1s;
+        }
+
+        .wave span:nth-child(3) {
+            animation-delay: 0.2s;
+        }
+
+        .wave span:nth-child(4) {
+            animation-delay: 0.3s;
+        }
+
+        .wave span:nth-child(5) {
+            animation-delay: 0.4s;
+        }
+
+        .wave span:nth-child(6) {
+            animation-delay: 0.5s;
+        }
+
+        .wave span:nth-child(7) {
+            animation-delay: 0.6s;
+        }
+
+        .wave span:nth-child(8) {
+            animation-delay: 0.7s;
+        }
+
+        .wave span:nth-child(9) {
+            animation-delay: 0.8s;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -84,7 +137,10 @@
         </section>
         <!-- marquee section -->
         <div class="font-sora text-gray-700 border-2 border-gray-700 border-x-0 bg-yellow-200 pt-2">
-            <marquee height="25" direction="left">🐾 Welcome to Browse4Pets! Find your perfect furry friend, explore different breeds, and shop high-quality pet essentials. From cozy beds to tasty treats, we have everything to keep your pet happy and healthy. Join our pet-loving community and give your pet the best care! 🐶🐱💕</marquee>
+            <marquee height="25" direction="left">🐾 Welcome to Browse4Pets! Find your perfect furry friend, explore
+                different breeds, and shop high-quality pet essentials. From cozy beds to tasty treats, we have
+                everything to keep your pet happy and healthy. Join our pet-loving community and give your pet the best
+                care! 🐶🐱💕</marquee>
         </div>
     </header>
 
@@ -94,8 +150,11 @@
         <section class="">
             <div class="bg-[url('./c1-assets/cat-big.png')] bg-cover  h-[749px]  flex items-center pb-1">
                 <div class="md:w-1/2 text-left -mt-4">
-                    <h3 class="adlam-display-regular font-bold text-4xl md:text-5xl  text-gray-900 leading-tight">Pamper
-                        Your Pet,<br> Because They Deserve the Bes</h3>
+                    <h3 class="adlam-display-regular font-bold text-4xl md:text-5xl  text-gray-900 leading-tight wave">
+                        <span>Pamper</span>
+                        <span>Your</span> <Span>Pet,</Span><br> <span>Because</span> <span>They</span>
+                        <span>Deserve</span> <span>the</span> <span>Bes</span>
+                    </h3>
                     <p class="font-sora text-gray-600 text-lg mt-4">Discover a world of treats, toys, and essentials
                         handpicked for your furry friends. Shop now and make tails wag with joy!</p>
                     <button
